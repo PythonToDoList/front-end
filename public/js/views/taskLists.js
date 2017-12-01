@@ -18,9 +18,8 @@ function taskDetailPopup(){
         $('#task-popup').addClass('hidden')
     })
     $('#task-popup .popup-inner').empty()
-
-    let taskId = parseInt(this.id.split('-')[1])
-    let theTask = sampleData.filter(task => task.id === taskId)[0]
+    
+    let theTask = getTaskFromId(this.id)
     $('#task-popup .popup-inner').append( compileTemplate(taskDetail, {task: theTask}) )
     setupButtonHandlers()
 }

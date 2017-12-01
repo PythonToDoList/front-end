@@ -8,13 +8,17 @@ function newTaskHandler(event){
     $('#taskform').on('submit', submitUpdateAndClose)
 }
 
+function getTaskFromId(taskId) {
+    let taskId = parseInt(taskId.split('-')[1])
+    return Object.assign({}, sampleData.filter(task => task.id === taskId)[0])
+}
+
 function editTaskHandler(event){
     $('#task-popup').removeClass('hidden')
     $('.popup-content .close').on('click', _ => {
         $('#task-popup').addClass('hidden')
     })
-    let taskId = parseInt($(this).parent().attr('data').split('-')[1])
-    let theTask = Object.assign({}, sampleData.filter(task => task.id === taskId)[0])
+    let theTask = getTaskFromId($(this).parent().attr('data'))
     if (theTask.due_date) {
         theTask.due_day = reformatDate(theTask.due_date.split(' ')[0])
         theTask.due_time = reformatTime(theTask.due_date.split(' ').slice(1,).join(' '))
@@ -22,6 +26,16 @@ function editTaskHandler(event){
     $('#task-popup .popup-inner').empty()
     $('#task-popup .popup-inner').append( compileTemplate(taskEditForm, {task: theTask}) )
     $('#taskform-edit').on('submit', submitUpdateAndClose)
+}
+
+function completeTaskHandler(event){
+    // TODO: change status of task to complete and remove from any lists
+    let theTask = getTaskFromId($(this).parent().attr('data'))
+}
+
+function deleteTaskHandler(event){
+    // TODO: delete the given task properly
+    let theTask = getTaskFromId($(this).parent().attr('data'))
 }
 
 function reformatDate(date) {

@@ -205,7 +205,7 @@ td {
   .list-3 tr {
     border: 1px solid #979797; }
 
-#many-lists {
+#many-lists, #profile-page {
   overflow: hidden;
   width: 100%;
   margin: auto; }

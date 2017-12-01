@@ -103,4 +103,14 @@ const login = `<div class="landing-form" id="login">
             {{/each}}
             </table>
         </div>
-    </div>`
+    </div>`,
+    profileBlock = `<div class="list-3">
+    </div>`,
+    profileLists = `<div class="list-3">
+    </div>`,
+    profileBtnBlock = `
+        <div class="btn-block list-3">
+            <button type="button" class="btn-right btn-gray" id="new-task">Create a New Task</Button>
+            <button type="button" class="btn-right btn-gray" id="edit-profile">Edit Profile</Button>
+        </div>
+    `

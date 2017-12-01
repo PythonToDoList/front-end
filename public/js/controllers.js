@@ -36,6 +36,10 @@ function taskController() {
 
 function profileController() {
     clearMain()
+    $('#content').append(`<div id="profile-page"></div>`)
+    buildProfileBlock()
+    buildProfileLists()
+    addProfileButtonBlock()
 }
 
 function logoutController() {
