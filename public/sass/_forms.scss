@@ -1,0 +1,36 @@
+.landing-form {
+    display: block;
+    max-width: 300px;
+    background-color: $gray;
+    border: thin solid $dark-gray;
+    height: 600px;
+    padding: 20px;
+    float: left;
+
+    h2 {
+        font-weight: 400;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    input {
+        font-size: 1.1em;
+        padding: 10px 10px;
+        border: thin solid $dark-gray;
+        width: 250px;
+        margin: 5px auto;
+    }
+}
+
+#registration {
+    margin-right: 40px;
+}
+
+#login {
+    margin-left: 40px;
+}
+
+.error {
+  text-align: center;
+  color: red;
+}

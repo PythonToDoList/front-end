@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif!important;
+}
+*:focus {
+    outline: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}

@@ -1,0 +1,38 @@
+$gray: #D8D8D8;
+$dark-gray: #979797;
+$gray-date: #ADADAD;
+$hover-green: rgba(0, 255, 0, 0.2);
+
+@import 'reset';
+@import 'base';
+
+#content {
+    width: 1000px;
+    margin: auto
+}
+#auth {
+  width: 680px;
+  margin: auto;
+}
+
+#profile-contents {
+    padding: 0 20px;
+    float: left;
+}
+.dark-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0,0,0,0.5);
+    height: 100vh;
+    width: 100vw;
+}
+
+@import 'nav';
+@import 'profile';
+@import 'forms';
+@import 'buttons';
+@import 'lists';
+@import 'popups';
+@import 'newtask';

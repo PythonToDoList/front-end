@@ -1,0 +1,20 @@
+$nav-color: black;
+
+.nav-link {
+    display: inline-block;
+    text-decoration: none;
+    color: $nav-color;
+    border-left: thin solid $dark-gray;
+    padding: 20px;
+}
+
+nav {
+    overflow: hidden;
+    background-color: $gray;
+    border: thin solid $dark-gray;
+    margin-bottom: 20px;
+
+    ul {
+        float: right;
+    }
+}

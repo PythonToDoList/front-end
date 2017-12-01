@@ -1,0 +1,277 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif !important; }
+
+*:focus {
+  outline: none; }
+
+ul {
+  list-style-type: none; }
+
+.hidden {
+  display: none; }
+
+.clearfix {
+  clear: both; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+#content {
+  width: 1000px;
+  margin: auto; }
+
+#auth {
+  width: 680px;
+  margin: auto; }
+
+#profile-contents {
+  padding: 0 20px;
+  float: left; }
+
+.dark-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100vw; }
+
+.nav-link {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border-left: thin solid #979797;
+  padding: 20px; }
+
+nav {
+  overflow: hidden;
+  background-color: #D8D8D8;
+  border: thin solid #979797;
+  margin-bottom: 20px; }
+  nav ul {
+    float: right; }
+
+#profile-container {
+  background-color: #D8D8D8;
+  border: thin solid #979797;
+  padding: 10px;
+  width: 300px; }
+
+.landing-form {
+  display: block;
+  max-width: 300px;
+  background-color: #D8D8D8;
+  border: thin solid #979797;
+  height: 600px;
+  padding: 20px;
+  float: left; }
+  .landing-form h2 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.2em; }
+  .landing-form input {
+    font-size: 1.1em;
+    padding: 10px 10px;
+    border: thin solid #979797;
+    width: 250px;
+    margin: 5px auto; }
+
+#registration {
+  margin-right: 40px; }
+
+#login {
+  margin-left: 40px; }
+
+.error {
+  text-align: center;
+  color: red; }
+
+button {
+  padding: 20px;
+  border: thin solid #979797;
+  cursor: pointer;
+  font-size: 1em; }
+
+.btn-right {
+  float: right;
+  overflow: hidden; }
+
+.btn-center {
+  margin: auto; }
+
+.btn-left {
+  float: left; }
+
+.btn-top-margin {
+  margin-top: 10px; }
+
+.btn-lrg {
+  width: 100%; }
+
+.btn-white {
+  background-color: white;
+  color: black; }
+
+.btn-white:hover, .btn-gray:hover {
+  background-color: black;
+  color: white; }
+
+.btn-gray {
+  background-color: #D8D8D8; }
+
+tr {
+  background-color: white;
+  cursor: pointer; }
+
+tr:hover {
+  background-color: rgba(0, 255, 0, 0.2); }
+
+tr:hover .due-date {
+  color: white; }
+
+td {
+  padding: 5px 20px; }
+  td p {
+    margin: 5px 0;
+    line-height: 1.3em;
+    font-size: 0.9em; }
+
+.due-date {
+  color: #ADADAD;
+  font-style: italic; }
+
+.late {
+  background-color: rgba(255, 0, 0, 0.2); }
+
+.list-3 {
+  width: 300px;
+  float: left;
+  background-color: #D8D8D8;
+  border: thin solid #979797;
+  padding: 10px 10px 0;
+  margin: 0px 10px; }
+  .list-3 .list-container {
+    height: 400px;
+    overflow-y: scroll; }
+  .list-3 h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 10px auto 20px; }
+  .list-3 table {
+    border-collapse: collapse; }
+  .list-3 tr {
+    border: 1px solid #979797; }
+
+#many-lists {
+  overflow: hidden;
+  width: 100%;
+  margin: auto; }
+
+.btn-block {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  overflow: hidden; }
+
+.popup-content {
+  position: relative;
+  width: 600px;
+  margin: auto;
+  top: 5vh; }
+  .popup-content .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0; }
+
+#taskdetail-container textarea {
+  min-height: 350px;
+  font-size: 0.9em; }
+
+#taskform-container, #taskdetail-container {
+  display: block;
+  width: 600px;
+  background-color: #D8D8D8;
+  border: thin solid #979797;
+  height: 600px;
+  padding: 40px; }
+  #taskform-container h2, #taskdetail-container h2 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.2em; }
+  #taskform-container h3, #taskdetail-container h3 {
+    margin: 20px 0;
+    font-size: 1.1em;
+    font-weight: 700; }
+  #taskform-container .date-line, #taskdetail-container .date-line {
+    text-align: center;
+    margin-top: 10px; }
+  #taskform-container input[type="text"],
+  #taskform-container input[type="date"],
+  #taskform-container input[type="time"],
+  #taskform-container textarea, #taskdetail-container input[type="text"],
+  #taskdetail-container input[type="date"],
+  #taskdetail-container input[type="time"],
+  #taskdetail-container textarea {
+    font-size: 1.1em;
+    padding: 10px 10px;
+    border: thin solid #979797; }
+  #taskform-container input[type="text"], #taskform-container textarea, #taskdetail-container input[type="text"], #taskdetail-container textarea {
+    width: 100%; }
+  #taskform-container p, #taskdetail-container p {
+    width: 80%;
+    margin: 10px auto; }
+  #taskform-container #is-completed, #taskdetail-container #is-completed {
+    text-align: center; }
+    #taskform-container #is-completed input, #taskdetail-container #is-completed input {
+      display: inline-block;
+      margin-left: 20px; }
+  #taskform-container textarea, #taskdetail-container textarea {
+    height: 250px; }
+  #taskform-container form, #taskdetail-container form {
+    margin-top: 20px; }
+
+/*# sourceMappingURL=main.css.map */

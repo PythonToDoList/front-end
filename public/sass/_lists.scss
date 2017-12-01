@@ -1,0 +1,65 @@
+tr {
+    background-color: white;
+    cursor: pointer;
+}
+tr:hover {
+    background-color: $hover-green;
+}
+tr:hover .due-date {
+    color: white;
+}
+td {
+    padding: 5px 20px;
+    p {
+        margin: 5px 0;
+        line-height: 1.3em;
+        font-size: 0.9em;
+    }
+}
+
+.due-date {
+    color: $gray-date;
+    font-style: italic;
+}
+
+.late {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.list-3 {
+    width: 300px;
+    float: left;
+    background-color: $gray;
+    border: thin solid $dark-gray;
+    padding: 10px 10px 0;
+    margin: 0px 10px;
+
+    .list-container {
+        height: 400px;
+        overflow-y: scroll;
+    }
+    h2 {
+        text-align: center;
+        font-size: 2em;
+        font-weight: 700;
+        margin: 10px auto 20px;
+    }
+    table {
+        border-collapse: collapse;
+    }
+    tr {
+        border: 1px solid $dark-gray;
+    }
+}
+
+#many-lists {
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+}
+.btn-block {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: hidden;
+}

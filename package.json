@@ -1,0 +1,23 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "The front end of the todo list",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PythonToDoList/front-end.git"
+  },
+  "author": "Nicholas Hunt-Walker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PythonToDoList/front-end/issues"
+  },
+  "homepage": "https://github.com/PythonToDoList/front-end#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
