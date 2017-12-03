@@ -39,7 +39,7 @@ function profileController() {
     $('#content').append(`<div id="profile-page"></div>`)
     buildProfileBlock()
     buildProfileLists()
-    addProfileButtonBlock()
+    $('#profile-page').append( compileTemplate(profileBtnBlock) )
 }
 
 function logoutController() {

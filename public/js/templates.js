@@ -104,13 +104,28 @@ const login = `<div class="landing-form" id="login">
             </table>
         </div>
     </div>`,
-    profileBlock = `<div class="list-3">
+    profileBlock = `<div class="list-3" id="profile-block">
+        <h1>Profile Info<h1>
+        <h2>{{ user.firstname }} {{ user.lastname }}</h2>
+        <p>{{ user.email }}</p>
+        <section class="task-count">
+            <p>Tasks To Go</p>
+            <p class="indent">{{ tasksLeft }}</p>
+        </section>
+        <section class="task-count">
+            <p>Tasks Overdue</p>
+            <p class="indent">{{ overdue }}</p>
+        </section>
+        <section class="task-count">
+            <p>Tasks Completed</p>
+            <p class="indent">{{ completed }}</p>
+        </section>
     </div>`,
-    profileLists = `<div class="list-3">
+    profileLists = `<div class="list-3 clear-bkg">
     </div>`,
     profileBtnBlock = `
-        <div class="btn-block list-3">
-            <button type="button" class="btn-right btn-gray" id="new-task">Create a New Task</Button>
-            <button type="button" class="btn-right btn-gray" id="edit-profile">Edit Profile</Button>
+        <div class="btn-block list-3 clear-bkg">
+            <button type="button" class="btn-gray" id="new-task">Create a New Task</Button>
+            <button type="button" class="btn-gray" id="edit-profile">Edit Profile</Button>
         </div>
     `
